@@ -13,13 +13,10 @@ public class ThreadedConnectionHandler extends Thread
     private ObjectInputStream is = null;			// Input stream
     private ObjectOutputStream os = null;			// Output stream
     private DataPackage theData = new DataPackage();
-    private DateTimeService theDateService;
-    
-	// The constructor for the connection handler
+    // The constructor for the connection handler
     public ThreadedConnectionHandler(Socket clientSocket) {
         this.clientSocket = clientSocket;
-        //Set up a service object to get the current date and time
-        theDateService = new DateTimeService();
+        new DateTimeService();
     }
 
     // Will eventually be the thread execution method - can't pass the exception back

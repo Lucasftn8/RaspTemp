@@ -1,5 +1,6 @@
 /* The Date Server Class - Written by Derek Molloy for the EE402 Module
  * See: ee402.eeng.dcu.ie
+ * Modified by Lucas Fontaine for Assigment 2
  */
 
 package ee402test;
